@@ -1,10 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 export function useApi() {
   const [data, setData] = useState("");
   const [error, setError] = useState("");
   const [url, setUrl] = useState("");
-  const exRef = useRef();
 
   useEffect(() => {
     async function fetchData() {

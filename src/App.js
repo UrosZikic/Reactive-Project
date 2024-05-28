@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useApi } from "./useApi";
 import Movie from "./Movie";
 import Book from "./Book";
+import Header from "./Header";
 import "./App.css";
 export default function App() {
   const [bookData, setBookData] = useState(null);
@@ -38,6 +39,7 @@ export default function App() {
 
   return (
     <>
+      <Header />
       <div className="bookData">
         {bookData &&
           bookData.map((book) => (

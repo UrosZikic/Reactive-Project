@@ -11,3 +11,12 @@
 .movieData img {
   width: 100%;
 }
+
+.resultData {
+  width: 100%;
+  max-width: 30rem;
+}
+.resultData img {
+  width: 10rem;
+  height: auto;
+}
